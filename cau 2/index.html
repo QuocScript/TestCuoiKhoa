@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+const arr = [60, 40, 55, 75, 64];
+const alternativeSum = (arr = []) => {
+   let sum1 = 0;
+   
+   for(let i = 0; i < arr.length; i++){
+      const el = arr[i];
+      if(i % 2 !== 0){
+         continue;
+      };
+      sum1 += el;
+   };
+   return sum1;
+};
+console.log(alternativeSum(arr));
+const arr1 = [60, 40, 55, 75, 64];
+const alternativeSum1 = (arr = []) => {
+   let sum1 = 0;
+  
+   for(let i = 0; i < arr.length; i++){
+      const el = arr[i];
+      if(i % 2 == 0){
+         continue;
+      };
+      sum1 += el;
+   };
+   return sum1;
+};
+console.log(alternativeSum1(arr));
+//khong chay duoc :((
+    </script>
+</body>
+
+</html>
